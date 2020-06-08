@@ -10,6 +10,7 @@ def find_min_in_nested_arrays(src)
       if mins[primary_index] > src[primary_index][secondary_index]
         mins[primary_index] = src[primary_index][secondary_index]
       end
+      secondary_index += 1
     end
   end
 end
