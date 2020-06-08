@@ -5,7 +5,7 @@ def find_min_in_nested_arrays(src)
   day = 0
   while day < src.length do
     hour = 0
-    while hour < src[day][hour].length do
+    while hour < src[day].length do
       if daily_lows[day] == nil || src[day][hour] < daily_lows[day]
         daily_lows[day] == src[day][hour]
       end
